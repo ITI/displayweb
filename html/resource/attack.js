@@ -1,6 +1,3 @@
-$('#attack_btn').on("click", function(event) {
-    jQuery.get("http://razor.iti.lab:8080/rscad/activate")
-})
 
 $(document).ready(function() {
     req = $.get("conf/names")
