@@ -7,7 +7,7 @@ $(document).ready(function() {
         }
         var bnames = JSON.parse(data)
         for (b in bnames) {
-            btn = $("<button type=\"button\" class=\"btn btn-primary\" id=\"" + bnames[b] + "\">" + bnames[b] + "</button><p/>");
+            btn = $("<tr><td><button type=\"button\" class=\"btn btn-lg btn-primary btn-block\" id=\"" + bnames[b] + "\"><br/>" + bnames[b] + "<br/><br/></button></td></tr>");
             btn.click(clickeroo);
             $("#clickers_here").append(btn);
         }

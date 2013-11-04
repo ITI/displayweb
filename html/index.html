@@ -3,17 +3,31 @@
   <head>
     <title>TCIPG Display Wall</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="resource/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="resource/bootstrap.css" rel="stylesheet" media="screen">
+    <link href="resource/bootstrap-theme.css" rel="stylesheet">
   </head>
   <body>
     <script src="resource/jquery.js"></script>
     <script src="resource/bootstrap.min.js"></script>
-    <div class="container" id="clickers_here">
-    </div>
-    <div class="container" id="power">
-      <button type="button" class="btn btn-primary" id="power_on">Wall On</button>
-      <button type="button" class="btn btn-primary" id="power_off">Wall Off</button>
-    </div>
+	<h1>TCIPG Display Wall Control</h1>
+	<div class="table-responsive">
+    	<table class="table" id="clickers_here">
+		</table>
+	</div>
+	<br/>
+	<div class="table-responsive">
+		<table class="table" id="power">
+			<tr>
+				
+				<td>
+					<button type="button" class="btn btn-lg btn-block btn-success" id="power_on"><br/>Wall On<br/><br/></button>
+				</td>
+				<td>
+					<button type="button" class="btn btn-lg btn-block btn-danger" id="power_off"><br/>Wall Off<br/><br/></button>
+				</td>
+			</tr>
+		</table>
+	</div>
     <script src="resource/wall.js"></script>
   </body>
 </html>
