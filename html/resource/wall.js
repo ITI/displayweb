@@ -8,8 +8,8 @@ $(document).ready(function() {
         var bnames = JSON.parse(data)
         for (b in bnames) {
             btn = $("<tr><td><button type=\"button\" class=\"btn btn-lg btn-primary btn-block\" id=\"" + bnames[b] + "\"><br/>" + bnames[b] + "<br/><br/></button></td></tr>");
-            btn.click(clickeroo);
             $("#clickers_here").append(btn);
+            $("#" + bnames[b]).click(clickeroo);
         }
     });
 });
@@ -19,5 +19,7 @@ $(".btn").on("click", function(e) {
 });
 
 function clickeroo(e) {
+	console.log(this);
+	console.log(this.id);
     rq = $.post("set", JSON.stringify(this.id));
 }
